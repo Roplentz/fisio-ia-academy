@@ -1,28 +1,34 @@
-# Fisio IA Academy
+# Fisio IA Academy — MVP 1.1
 
-Plataforma de educação, inovação e inteligência artificial aplicada à fisioterapia.
+Laboratório educacional que conecta anatomia lombar, conteúdo estruturado do PilatesVision e um tutor contextual demonstrativo.
 
-## Primeiro módulo: Simulador da Coluna Lombar
-
-MVP educacional interativo com:
+## Entregas
 
 - exploração dos segmentos L2–L3, L4–L5 e L5–S1;
-- simulação de flexão/extensão, inclinação lateral e rotação axial;
-- camadas didáticas de ossos, discos, músculos e nervos;
-- casos de lombalgia mecânica, dor radicular L5 e estenose lombar;
-- demonstração do futuro copiloto clínico com IA;
+- vistas, camadas e movimentos didáticos;
+- três casos clínicos educacionais;
+- biblioteca inicial baseada na taxonomia do PilatesVision;
+- busca e filtro por nível;
+- relação entre exercício, anatomia, métricas e segurança;
+- tutor contextual local, sem envio de dados clínicos;
 - interface responsiva para computador e celular.
-
-> Uso educacional. Não realiza diagnóstico nem substitui avaliação clínica.
 
 ## Executar
 
-Abra `index.html` em um navegador moderno.
+```bash
+python3 -m http.server 8080
+```
 
-## Roadmap
+Acesse `http://localhost:8080`.
 
-1. Modelo anatômico 3D real em GLB/GLTF.
-2. Rotação livre e seleção individual de estruturas.
-3. Assistente de IA baseado em conteúdo clínico validado.
-4. Módulos cervical, torácico, joelho e ombro.
-5. Avaliações, trilhas de aprendizagem e área do professor.
+## Próxima arquitetura
+
+1. React + TypeScript;
+2. modelo GLB/GLTF com Three.js;
+3. `knowledge-core` versionado do PilatesVision;
+4. tutor com recuperação somente em fontes aprovadas;
+5. autenticação, turmas e progresso;
+6. integração com `motion-core` após validação;
+7. auditoria, consentimento e governança LGPD.
+
+> Uso educacional. Não realiza diagnóstico nem substitui avaliação profissional.
